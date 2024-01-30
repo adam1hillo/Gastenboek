@@ -7,10 +7,8 @@ import java.util.List;
 public class Gastenboek implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    private List<GastenboekEntry> entries = new ArrayList<>();
-    public List<GastenboekEntry> getEntries() {
-        return entries;
-    }
+    private final List<GastenboekEntry> entries = new ArrayList<>();
+
 
     public void add(GastenboekEntry entry) {
         if (entry == null) {
